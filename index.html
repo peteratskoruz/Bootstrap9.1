@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap-Popover</title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h3 class="text-center">Bootstrap Popover</h3>
+
+    <div class="row" style="margin-top: 100px;">
+        <div class="btn-group col-lg-12 col-sm-12 col-md-12">
+            <button class="btn btn-primary col-lg-4 col-md-4 col-sm-4" data-toggle="popover" data-placement="top" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Primary</button>
+            <button class="btn bg-success col-lg-4 col-md-4 col-sm-4" data-toggle="popover" data-placement="right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Success</button>
+            <button class="btn bg-warning col-lg-4 col-md-4 col-sm-4" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Warning</button>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $('[data-toggle="popover"]').popover();
+
+    })
+</script>
+</body>
+</html>
